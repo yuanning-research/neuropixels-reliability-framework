@@ -57,6 +57,8 @@ unitmatch did provide high-confidence pairs, but i think, matching neurons is no
 # what i did...
 i re-extract the raw waveforms(contains many messy works) of high-confidence pairs, and then drew the averaged waveforms.
 > jih
+
+
 then i calculated the ACG of high-confidence pairs.
 now i got waveforms and ACGs, i put these and the matchProb values together, and checked strong fits, poor fits and ambiguious fits from the unitmatch output.
 The reason i chose waveform and ACG is, waveform can show the spaticial features of the neurons, ACG can show the temporal features of the neurons.
