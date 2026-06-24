@@ -130,3 +130,18 @@ Third, manual review itself introduced uncertainty. Some pairs were difficult to
 Together, these observations suggest that high UnitMatch confidence scores alone may not fully capture match reliability and that independent evidence remains important for interpreting candidate neuron matches.
 
 #### 也许UnitMatch 太标准化，不能处理真实数据中的异常情况？
+
+### Preliminary Feature Exploration
+
+Several UnitMatch features were compared across manually assigned reliability categories using boxplots.
+
+Initial observations:
+
+- MatchProb remained high across all categories, including uncertain and mismatch cases.
+- Strongly supported matches tended to show higher values for some spatial and waveform-related features.
+- Uncertain cases did not consistently fall between matches and mismatches, suggesting that uncertainty may reflect insufficient evidence rather than intermediate reliability.
+- Some feature distributions showed substantial overlap across categories, indicating that individual UnitMatch metrics alone may not fully explain manual confidence assessments.
+
+These results suggest that manual validation captures information beyond MatchProb alone and motivate further investigation into how different evidence sources contribute to reliability assessment.
+
+One emerging observation is that uncertain cases may represent a distinct class driven by limited or ambiguous evidence, rather than simply occupying a midpoint between supported and unsupported matches.
