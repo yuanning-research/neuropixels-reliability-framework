@@ -142,8 +142,6 @@ Initial observations:
 - Uncertain cases did not consistently fall between matches and mismatches, suggesting that uncertainty may reflect insufficient evidence rather than intermediate reliability.
 - Some feature distributions showed substantial overlap across categories, indicating that individual UnitMatch metrics alone may not fully explain manual confidence assessments.
 
-These results suggest that manual validation captures information beyond MatchProb alone and motivate further investigation into how different evidence sources contribute to reliability assessment.
-
-One emerging observation is that uncertain cases may represent a distinct class driven by limited or ambiguous evidence, rather than simply occupying a midpoint between supported and unsupported matches.
+Overall, no single UnitMatch feature consistently separated all reliability categories. These preliminary observations suggest that reliability is likely determined by the integration of multiple evidence sources rather than any individual metric, motivating the development of an evidence-based reliability assessment framework.
 
 Manual review was treated as an evidence-based assessment process rather than absolute ground truth.
