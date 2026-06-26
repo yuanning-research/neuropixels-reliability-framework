@@ -14,6 +14,6 @@ Several recurring evidence patterns emerged during manual review:
 
 Most evidence combinations mapped consistently to a single reliability category. All pairs with Support + Support evidence were classified as Strong Matches, whereas all pairs with Ambiguous + Ambiguous evidence were classified as Uncertain.
 
-Notably, ACG assessments were frequently classified as ambiguous (60.2%), suggesting that ACG often provided limited information for reliability assessment. In contrast, waveform evidence more often contributed decisive support or contradiction. Waveform disagreement frequently led to mismatch classifications even when ACG evidence was inconclusive.
+ACG assessments were frequently classified as ambiguous (60.2%), making them less informative than waveform evidence in many cases. However, when clear ACG support or contradiction was present, it generally agreed with waveform-based assessments and contributed to confident classifications. Waveform disagreement frequently led to mismatch classifications even when ACG evidence was inconclusive.
 
-Together, these observations suggest that uncertainty was primarily driven by insufficient evidence rather than disagreement between evidence sources. Reliability judgments appeared to emerge from the combination of multiple evidence sources rather than any individual metric alone.
+Together, these observations suggest that uncertainty arose from two situations: insufficient evidence (Ambiguous + Ambiguous) and conflicting evidence (Against + Support). Reliability judgments appeared to emerge from the combination of multiple evidence sources rather than any individual metric alone.
