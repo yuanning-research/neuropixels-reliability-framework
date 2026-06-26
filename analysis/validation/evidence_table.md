@@ -145,3 +145,5 @@ Initial observations:
 These results suggest that manual validation captures information beyond MatchProb alone and motivate further investigation into how different evidence sources contribute to reliability assessment.
 
 One emerging observation is that uncertain cases may represent a distinct class driven by limited or ambiguous evidence, rather than simply occupying a midpoint between supported and unsupported matches.
+
+Manual review was treated as an evidence-based assessment process rather than absolute ground truth.
