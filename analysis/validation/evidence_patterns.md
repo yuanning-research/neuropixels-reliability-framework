@@ -43,3 +43,35 @@ Together, these results indicate that match direction and evidential confidence 
 UnitMatch features appear to be more informative for determining match direction than for establishing confidence in a match decision. Cases with high algorithmic similarity can still require manual interpretation when supporting evidence is incomplete, conflicting, or difficult to reconcile.
 
 This distinction motivates the separation between direction assessment and reliability assessment within the proposed evidence-based review framework.
+
+## Sources of Uncertainty Among High-Confidence Pairs
+
+To further investigate why some candidate pairs remained difficult to classify despite receiving extremely high UnitMatch scores, all uncertain pairs with MatchProb > 0.99 were examined individually. Sixteen of the twenty-one uncertain pairs (76.2%) exceeded this threshold, including fourteen pairs (66.7%) with MatchProb > 0.999.
+
+These observations suggest that uncertainty is not simply a consequence of low MatchProb or weak feature values. Instead, several recurring sources of uncertainty were identified during manual review.
+
+### Representative Sources of Uncertainty
+
+| Source of uncertainty | Representative observations |
+|---|---|
+| Spatial inconsistency | High MatchProb and waveform similarity despite large EucledianDistance and reduced CentroidDist |
+| Waveform extraction artifacts | Sharp truncation, flat segments, or incomplete waveform structure limiting interpretation |
+| Weak supporting evidence | Sparse or uninformative ACG patterns providing little independent validation |
+| Conflicting evidence | Waveform morphology and ACG patterns suggesting different conclusions |
+| Potential local candidate ambiguity | Multiple nearby candidate pairs exhibiting similarly high similarity scores |
+
+These observations are not mutually exclusive, and individual uncertain pairs often exhibited multiple sources of uncertainty simultaneously.
+
+### Interpretation
+
+Many high-confidence uncertain pairs combined strong similarity metrics with weak or conflicting biological evidence. A large subset showed waveform truncation or flat waveform segments that were likely related to extraction or preprocessing limitations rather than clear biological differences. In these cases, ACG patterns were often sparse or uninformative, providing little additional evidence to support or reject the match.
+
+Distance-related inconsistencies were also common. Several pairs retained near-perfect MatchProb values and highly similar waveform shapes despite exhibiting substantial spatial separation between sessions. This observation is consistent with the feature analysis, where EucledianDistance and CentroidDist showed the strongest associations with resolution status while contributing relatively little to match-versus-mismatch direction.
+
+A smaller subset of uncertain pairs showed disagreement between evidence sources. Examples included cases where waveform morphology differed despite similar ACG patterns, or where specific waveform components were present in one session but absent in the other. These cases illustrate situations in which no single feature provides a decisive answer and manual interpretation requires weighing multiple partially conflicting sources of evidence.
+
+Some uncertain cases also appeared within local groups of highly similar candidate units. Although not systematically analyzed, these observations suggest that uncertainty may sometimes arise from ambiguity among multiple plausible candidates rather than from a single clearly incorrect match.
+
+Taken together, these observations indicate that high-confidence uncertain pairs are not simply low-quality matches. Rather, they represent situations in which algorithmic similarity remains high while the available biological evidence is incomplete, inconsistent, or difficult to reconcile.
+
+These findings further support the distinction between algorithmic confidence and evidential confidence. While UnitMatch scores can provide useful information for identifying candidate matches, they do not fully capture the quality, consistency, or interpretability of the evidence available for manual validation.
